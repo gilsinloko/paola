@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paola Serviços</title>
+
+<!-- FONTE BONITA -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        background: #0a0a0a;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    .photo-container {
+        margin-top: 30px;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #292929;
+    }
+
+    .verified-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #ff4f8b;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 15px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #ff4f8b;
+    }
+
+    .info {
+        font-size: 14px;
+        opacity: 0.85;
+        margin-top: -5px;
+    }
+
+    /* DESCRIÇÃO */
+    .descricao {
+        margin-top: 25px;
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.9;
+    }
+
+    /* CARROSSEL */
+    .carousel-container {
+        margin-top: 25px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 14px;
+        padding: 10px;
+        will-change: transform;
+    }
+
+    .carousel-track img {
+        width: 220px;
+        height: 330px;
+        border-radius: 16px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    /* TABELA DE PREÇOS */
+    .precos {
+        margin-top: 20px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    /* BOTÃO */
+    .btn {
+        margin-top: 18px;
+        background: #ff4f8b;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 40px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 0 10px #ff4f8b88;
+        transition: 0.2s;
+    }
+    .btn:active {
+        transform: scale(0.96);
+    }
+
+    /* DEPOIMENTOS */
+    .depoimentos-title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .depoimentos-container {
+        overflow: hidden;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .depoimentos-track {
+        display: flex;
+        gap: 14px;
+        padding: 10px;
+        will-change: transform;
+    }
+
+    .depoimento {
+        background: #141414;
+        padding: 18px;
+        border-radius: 14px;
+        width: 260px;
+        flex-shrink: 0;
+        font-size: 14px;
+        text-align: left;
+        border: 1px solid #222;
+        opacity: 0.9;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #2a2a2a;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        opacity: 0.7;
+    }
+</style>
+<link rel="icon" type="image/png" href="capa.jpg">
+</head>
+<body>
+
+<!-- FOTO -->
+<div class="photo-container">
+    <img src="capa.jpg" class="profile-photo" alt="Foto">
+    <div class="verified-icon">✔</div>
+</div>
+
+<h1>Paola M.</h1>
+<div class="info">20 anos • Mato Grosso do Sul • 1,50m</div>
+
+<!-- DESCRIÇÃO ACIMA DO CARROSSEL -->
+<div class="descricao">
+    Companhia social para ocasiões especiais, eventos, passeios e atividades leves do dia a dia.<br>
+
+Com perfil acolhedor e postura tranquila, ofereço companhia social para quem deseja tornar o dia mais leve, participando de situações simples ou especiais com simpatia e boa energia.
+<br>
+De Caracas para Mato Grosso do Sul, trazendo charme, carisma e uma presença positiva para momentos que pedem alguém ao lado.
+</div>
+
+<!-- CARROSSEL -->
+<div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+        <img loading="lazy" src="car1.jpg">
+        <img loading="lazy" src="car2.jpg">
+        <img loading="lazy" src="car3.jpg">
+        <img loading="lazy" src="car4.jpg">
+        <img loading="lazy" src="car1.jpg">
+        <img loading="lazy" src="car2.jpg">
+    </div>
+</div>
+
+<!-- PREÇOS -->
+<div class="precos">
+ Para diferentes estilos de rotina.
+Do ritmo intenso da CLT ao dia a dia movimentado de quem empreende.
+<br>
+
+Quer deixar seu dia mais leve, aproveitar uma boa conversa ou ter alguém para acompanhar uma atividade especial?
+</div>
+
+<!-- BOTÃO -->
+<a href="1.html" class="btn">Eu quero</a>
+
+<!-- DEPOIMENTOS -->
+<div class="depoimentos-title">Depoimentos</div>
+
+<div class="depoimentos-container" id="dep-container">
+    <div class="depoimentos-track" id="dep-track">
+
+        <div class="depoimento">
+            <div class="avatar">👤</div>
+            "Experiência nota 10, atenciosa e muito educada. Replay com certeza!"
+        </div>
+
+        <div class="depoimento">
+            <div class="avatar">👤</div>
+            "Melhor companhia que já tive. Inteligente, divertida e muito meiga."
+        </div>
+
+        <div class="depoimento">
+            <div class="avatar">👤</div>
+            "Demorou um pouco a responder, mas valeu muito a pena esperar. Recomendo demais!"
+        </div>
+        <div class="depoimento">
+            <div class="avatar">👤</div>
+            "Estava em dias difíceis, valeu demais pela qualidade do serviço."
+        </div>
+
+        <div class="depoimento">
+            <div class="avatar">👤</div>
+            "Superou todas as expectativas em todos os sentidos."
+        </div>
+
+    </div>
+</div>
+
+<script>
+/* ------------------------------
+   AUTO SLIDE DO CARROSSEL
+--------------------------------*/
+let track = document.getElementById("track");
+let carousel = document.getElementById("carousel");
+
+let pos = 0;
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+let autoSlideSpeed = 0.35;
+
+function autoSlide() {
+    if (!isDragging) {
+        pos -= autoSlideSpeed;
+
+        if (Math.abs(pos) >= track.scrollWidth - window.innerWidth - 40) {
+            pos = 0;
+        }
+
+        track.style.transform = `translateX(${pos}px)`;
+    }
+
+    requestAnimationFrame(autoSlide);
+}
+autoSlide();
+
+/* DRAG DO CARROSSEL */
+carousel.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startX = e.touches[0].clientX - pos;
+});
+carousel.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    pos = currentX - startX;
+    track.style.transform = `translateX(${pos}px)`;
+});
+carousel.addEventListener("touchend", () => {
+    isDragging = false;
+});
+
+
+/* ------------------------------
+   DEPOIMENTOS (ARRASTÁVEL SEM AUTO-SLIDE)
+--------------------------------*/
+let depTrack = document.getElementById("dep-track");
+let depContainer = document.getElementById("dep-container");
+
+let depPos = 0;
+let depStartX = 0;
+let depDragging = false;
+
+depContainer.addEventListener("touchstart", e => {
+    depDragging = true;
+    depStartX = e.touches[0].clientX - depPos;
+});
+
+depContainer.addEventListener("touchmove", e => {
+    if (!depDragging) return;
+    depPos = e.touches[0].clientX - depStartX;
+    depTrack.style.transform = `translateX(${depPos}px)`;
+});
+
+depContainer.addEventListener("touchend", () => {
+    depDragging = false;
+});
+</script>
+
+</body>
+</html>
